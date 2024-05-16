@@ -4,14 +4,13 @@ const port = 9180;
 const http = require('http');
 const {Server} = require('socket.io');
 const cors = require('cors');
-const { connected } = require('process');
 
 app.use(cors())
 const server = http.createServer(app);
 const io = new Server(server, {
     cors:{
         // origin: 'http://localhost:5173',
-        origin: 'http://184.73.25.154',
+        origin: 'http://34.207.143.20',
         methods: ['GET', 'POST'],
     },
 });
